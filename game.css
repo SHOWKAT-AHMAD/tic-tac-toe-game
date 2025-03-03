@@ -1,0 +1,92 @@
+
+
+ body{
+    background-color:rgb(26, 111, 90);
+}
+p{
+    font-size:x-large;
+    text-align: center;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+#div1{
+width: 200px;
+height: 200px;
+background-color: gray;
+margin: auto ;
+display:flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+border-radius:  3px ;
+border: solid 3px blanchedalmond;
+
+
+}
+.button{
+    width: 60px;
+    height: 60px;
+    margin: 2px;
+    border: solid 2px blanchedalmond;
+    border-radius: 1px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+    
+}
+.div2{
+    width: 400px;
+    display:flex;
+   justify-content: space-between;
+   margin: auto auto;
+   margin-top: 50px;
+}
+#reset{
+    display: block;
+   margin: auto ;
+   margin-top: 30px;
+   width: 100px;
+   height: 40px;
+   border-radius: 5px;
+   color: black ;
+   font-size: 30px;
+   background-color: crimson;
+   border: none;
+}
+#player1.active, #player2.active {
+    color: red;
+    font-weight: bold;
+}
+.button.clicked {
+    animation: buttonClick 0.3s ease-in-out;
+}
+
+@keyframes buttonClick {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.button.winning {
+    background-color: yellow;
+    animation: winnerGlow 1s infinite alternate;
+}
+
+@keyframes winnerGlow {
+    from {
+        box-shadow: 0 0 5px gold;
+    }
+    to {
+        box-shadow: 0 0 20px gold;
+    }
+}
+
